@@ -54,8 +54,8 @@ st.markdown("""
 # --- ECHTE DATEN (Aus deinem PDF extrahiert) ---
 menu_data = {
     "Kalte Meze (je 7,50 €)": [
-        {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/cacik.jpeg"},
-        {"name": "RED KISIR", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/redkisir.jpeg"},
+        {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "neva-menu/images/cacik.jpeg"},
+        {"name": "RED KISIR", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "neva-menu/images/redkisir.jpeg"},
         {"name": "HUMUS", "desc": "Kichererbsen, Tahin, Knoblauch", "price": 7.50, "tags": ["G", "VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/humus.jpeg"},
         {"name": "PIYAZ", "desc": "Bohnen, Zwiebeln, Tomaten", "price": 7.50, "tags": ["G", "VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/piyaz.jpeg"},
            {"name": "LINSA", "desc": "Linsen, Bulgur, Zwiebeln", "price": 12.50, "tags": ["VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/linsa.jpeg"},
@@ -69,7 +69,7 @@ menu_data = {
         {"name": "Manti", "desc": "Mit Käsefüllung, Joghurt, Chiliöl, Knoblauch", "price": 12.50, "tags": ["V"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/manti.jpeg"},
         {"name": "Karides", "desc": "Garnelen, getr. Tomaten, Butter, Chili, Knoblauch", "price": 18.00, "tags": ["G", "Top-Seller"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/karides.jpeg"},
         {"name": "Ahtapot (Octopus Pan)", "desc": "Oktopus, Tomaten, Paprika, Perlzwiebeln, Rotwein", "price": 18.00, "tags": ["G", "Premium"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/octopuspan.jpeg"},
-        {"name": "Çökertme Kebap", "desc": "Filetstreifen, Pommes Julienne, Knoblauchjoghurt", "price": 18.00, "tags": ["G", "Spezialität"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/cökertme.jpeg"},
+        {"name": "Çökertme Kebap", "desc": "Filetstreifen, Pommes Julienne, Knoblauchjoghurt", "price": 18.00, "tags": ["G", "Spezialität"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/cokertme.jpeg"},
     ],
     "Neva Menüs (Sets)": [
         {"name": "Merhaba Menü", "desc": "Für 2 Gäste: 3 Kalte, 2 Warme, 1 Salat, 2 Desserts, 2 Mokka + Wasser-Flat", "price": 48.00, "tags": ["Best Value"], "img": "feast table"},
