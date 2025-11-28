@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
+import os
 
 # --- KONFIGURATION & NEVA STYLE ---
 st.set_page_config(page_title="Neva Digital Menu", page_icon="🧿", layout="centered")
@@ -95,9 +96,19 @@ with tab1:
     for category, items in menu_data.items():
         st.subheader(category)
         for item in items:
-            # Dynamische Bildsuche (Simulation)
-            st.image(item['img'], use_container_width=True)
             
+            # --- NEUER SICHERER BILD-LADE-BLOCK ---
+            image_path = item['img']
+            
+            # Wir prüfen: Existiert die Datei wirklich?
+            if os.path.exists(image_path):
+                display_image = image_path
+            else:
+                # Falls nicht gefunden: Fallback auf Internet-Bild, damit die App läuft
+                # Und wir zeigen dir eine kleine Warnung an, welches Bild fehlt
+                st.warning(f"⚠️ Bild nicht gefunden: '{image_path}' - Prüfe den Dateinamen auf GitHub!")
+                display_image = f"https://source.unsplash.com/800x600/?food,turkish"
+
             with st.container():
                 st.markdown(f"""
                 <div class="card">
@@ -114,14 +125,14 @@ with tab1:
                 
                 c1, c2 = st.columns([3, 1])
                 with c1:
-                    # In Produktion hier echte Fotos verwenden!
-                    st.image(img_url, use_container_width=True) 
+                    st.image(display_image, use_container_width=True) 
                 with c2:
                     st.write("") 
                     st.write("")
                     if st.button("➕", key=f"add_{item['name']}"):
                         st.session_state.cart.append(item)
                         st.toast(f"{item['name']} hinzugefügt!")
+
 
 with tab2:
     st.header("Neva Pairing")
