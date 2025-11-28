@@ -10,7 +10,7 @@ st.markdown("""
     <style>
     .stApp {
         background-color: #174d80; /* Neva Tiefblau */
-        color: #FFFFFF;
+        color: #dee7ef;
     }
     h1, h2, h3 {
         color: #a6773b !important; /* Gold */
@@ -40,7 +40,7 @@ st.markdown("""
         font-size: 1.1em;
     }
     .tag {
-        background-color: #0B1E3B;
+        background-color: #dee7ef;
         border: 1px solid #E87E54;
         color: #a6773b;
         padding: 2px 8px;
@@ -53,7 +53,7 @@ st.markdown("""
 
 # --- ECHTE DATEN (Aus deinem PDF extrahiert) ---
 menu_data = {
-    "Kalte Meze": [
+    "KALTE MEZE": [
         {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/cacik.jpeg"},
         {"name": "RED KISIR", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/redkisir.jpeg"},
         {"name": "HUMUS", "desc": "Kichererbsen, Tahin, Knoblauch", "price": 7.50, "tags": ["G", "VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/humus.jpeg"},
@@ -64,7 +64,7 @@ menu_data = {
         {"name": "LEVREK", "desc": "Wolfsbarsch, Sellerie, Orangen, Zwiebeln", "price": 7.50, "tags": ["G"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/levrek.jpeg"},
         {"name": "GREEK FETA", "desc": "Schafskäse, Honigmelone", "price": 7.50, "tags": ["G", "V"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/greekfeta.jpeg"},
     ],
-    "Warme Meze": [
+    "WARME MEZE": [
         {"name": "Börek", "desc": "Teigröllchen mit Sauerkraut-Chili-Füllung", "price": 12.50, "tags": ["VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/kadinbudu.jpeg"},
         {"name": "Manti", "desc": "Mit Käsefüllung, Joghurt, Chiliöl, Knoblauch", "price": 12.50, "tags": ["V"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/manti.jpeg"},
         {"name": "Karides", "desc": "Garnelen, getr. Tomaten, Butter, Chili, Knoblauch", "price": 18.00, "tags": ["G", "Top-Seller"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/karides.jpeg"},
@@ -90,7 +90,7 @@ with col2:
 st.caption("Dein digitaler Begleiter am Tisch")
 
 # --- TABS ---
-tab1, tab2, tab3 = st.tabs(["📖 Speisekarte", "🍷 Sommelier", "🛒 Bestellung"])
+tab1, tab2, tab3 = st.tabs(["📖 MENU", "🍷 PAIRING", "🛒 ORDER"])
 
 with tab1:
     for category, items in menu_data.items():
