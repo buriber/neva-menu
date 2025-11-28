@@ -97,17 +97,28 @@ with tab1:
         st.subheader(category)
         for item in items:
             
-            # --- NEUER SICHERER BILD-LADE-BLOCK ---
-            image_path = item['img']
+            raw_path = item['img']
+            display_image = None
             
-            # Wir prüfen: Existiert die Datei wirklich?
-            if os.path.exists(image_path):
-                display_image = image_path
+            # FALL A: Es ist eine Web-URL (http...)
+            if raw_path.startswith("http"):
+                # Automatischer Fix: Falls jemand den "blob" Link kopiert hat, machen wir "raw" draus
+                if "github.com" in raw_path and "/blob/" in raw_path:
+                    display_image = raw_path.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+                else:
+                    display_image = raw_path
+                    
+            # FALL B: Es ist eine lokale Datei (images/...)
             else:
-                # Falls nicht gefunden: Fallback auf Internet-Bild, damit die App läuft
-                # Und wir zeigen dir eine kleine Warnung an, welches Bild fehlt
-                st.warning(f"⚠️ Bild nicht gefunden: '{image_path}' - Prüfe den Dateinamen auf GitHub!")
-                display_image = f"https://source.unsplash.com/800x600/?food,turkish"
+                # Wir prüfen, ob die Datei da ist
+                if os.path.exists(raw_path):
+                    display_image = raw_path
+                else:
+                    # Debugging-Hilfe: Was sieht Python wirklich?
+                    files_in_folder = os.listdir("images") if os.path.exists("images") else "Ordner 'images' fehlt!"
+                    st.error(f"❌ Datei nicht gefunden: '{raw_path}'")
+                    st.caption(f"📂 Inhalt des 'images' Ordners: {files_in_folder}")
+                    display_image = "https://source.unsplash.com/800x600/?food,turkish" # Fallback
 
             with st.container():
                 st.markdown(f"""
@@ -125,13 +136,15 @@ with tab1:
                 
                 c1, c2 = st.columns([3, 1])
                 with c1:
-                    st.image(display_image, use_container_width=True) 
+                    if display_image:
+                        st.image(display_image, use_container_width=True) 
                 with c2:
                     st.write("") 
                     st.write("")
                     if st.button("➕", key=f"add_{item['name']}"):
                         st.session_state.cart.append(item)
                         st.toast(f"{item['name']} hinzugefügt!")
+
 
 
 with tab2:
