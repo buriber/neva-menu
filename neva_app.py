@@ -96,7 +96,7 @@ with tab1:
         st.subheader(category)
         for item in items:
             # Dynamische Bildsuche (Simulation)
-            img_url = f"https://source.unsplash.com/800x600/?{item['img']},food"
+            st.image(item['img'], use_container_width=True)
             
             with st.container():
                 st.markdown(f"""
