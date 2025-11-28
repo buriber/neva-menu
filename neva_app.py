@@ -169,7 +169,7 @@ with tab3:
             st.write(f"▪️ {item['name']} ({item['price']:.2f} €)")
         st.markdown("---")
         st.subheader(f"Gesamt: {total:.2f} €")
-        if st.button("Küche benachrichtigen"):
+        if st.button("ZEIGE DIESE LISTE DEINER KELLNERIN"):
             st.balloons()
             st.success("BESTELLUNG DEM KELLNER ZEIGEN")
             st.session_state.cart = []
