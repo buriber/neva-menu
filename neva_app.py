@@ -85,7 +85,7 @@ col1, col2 = st.columns([1, 5])
 with col1:
     st.write("🧿")
 with col2:
-    st.title("Neva Meyhane")
+    st.title("Neva Meze Restaurant")
 st.caption("Dein digitaler Begleiter am Tisch")
 
 # --- TABS ---
@@ -129,9 +129,9 @@ with tab2:
     drink = st.selectbox("Ich trinke...", ["Yeni Rakı", "Weißwein (Grauburgunder)", "Rotwein (Primitivo)", "Cocktail (Neva Anis)"])
     
     if drink == "Yeni Rakı":
-        st.success("Klassisch! Dazu empfehlen wir **Cacık** (neutralisiert), **Greek Feta** (Salzbalance) und **Levrek Marin**.")
+        st.success("Klassisch! Dazu empfehlen wir **Cacık** (neutralisiert), **Greek Feta** (Salzbalance) und **Levrek**.")
     elif "Weißwein" in drink:
-        st.success("Dazu passt hervorragend etwas aus dem Meer: **Karides** oder **Ahtapot**.")
+        st.success("Dazu passt hervorragend etwas aus dem Meer: **Karides** oder **Octopus**.")
     elif "Rotwein" in drink:
         st.success("Rotwein braucht kräftige Partner: **Çökertme Kebap** oder **Red Kisir**.")
     else:
