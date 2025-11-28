@@ -53,12 +53,15 @@ st.markdown("""
 # --- ECHTE DATEN (Aus deinem PDF extrahiert) ---
 menu_data = {
     "Kalte Meze (je 7,50 €)": [
-        {"name": "Cacık", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "tzatziki"},
-        {"name": "Red Kisir", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "bulgur salad"},
-        {"name": "Humus", "desc": "Kichererbsen, Tahin, Knoblauch", "price": 7.50, "tags": ["G", "VE"], "img": "hummus"},
-        {"name": "Piyaz", "desc": "Bohnen, Zwiebeln, Tomaten", "price": 7.50, "tags": ["G", "VE"], "img": "bean salad"},
-        {"name": "Levrek Marin", "desc": "Wolfsbarsch, Sellerie, Orangen, Zwiebeln", "price": 7.50, "tags": ["G"], "img": "seabass ceviche"},
-        {"name": "Greek Feta", "desc": "Schafskäse, Honigmelone", "price": 7.50, "tags": ["G", "V"], "img": "feta cheese"},
+        {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "tzatziki"},
+        {"name": "RED KISIR", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "bulgur salad"},
+        {"name": "HUMUS", "desc": "Kichererbsen, Tahin, Knoblauch", "price": 7.50, "tags": ["G", "VE"], "img": "hummus"},
+        {"name": "PIYAZ", "desc": "Bohnen, Zwiebeln, Tomaten", "price": 7.50, "tags": ["G", "VE"], "img": "bean salad"},
+           {"name": "LINSA", "desc": "Linsen, Bulgur, Zwiebeln", "price": 12.50, "tags": ["VE"], "img": "linsa"},
+           {"name": "TARAMA", "desc": "Fischrogen, Zwiebeln, Eier, Dill", "price": 12.50, "tags": ["G"], "img": "tarama"},
+           {"name": "ROASTIES", "desc": "Geröstete Auberginen, Paprika, Tomaten", "price": 12.50, "tags": ["G", "VE"], "img": "roasties"},
+        {"name": "LEVREK", "desc": "Wolfsbarsch, Sellerie, Orangen, Zwiebeln", "price": 7.50, "tags": ["G"], "img": "seabass ceviche"},
+        {"name": "GREEK FETA", "desc": "Schafskäse, Honigmelone", "price": 7.50, "tags": ["G", "V"], "img": "feta cheese"},
     ],
     "Warme Meze (12,50 € - 18,00 €)": [
         {"name": "Börek", "desc": "Teigröllchen mit Sauerkraut-Chili-Füllung", "price": 12.50, "tags": ["VE"], "img": "spring rolls"},
