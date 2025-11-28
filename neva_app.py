@@ -150,16 +150,16 @@ with tab1:
 with tab2:
     st.header("Neva Pairing")
     st.info("Wähle dein Getränk, wir empfehlen die Meze.")
-    drink = st.selectbox("Ich trinke...", ["Yeni Rakı", "Weißwein (Grauburgunder)", "Rotwein (Primitivo)", "Cocktail (Neva Anis)"])
+    drink = st.selectbox("Ich trinke...", ["Rakı", "Weißwein", "Rotwein", "Cocktail", "Wasser"])
     
-    if drink == "Yeni Rakı":
-        st.success("Klassisch! Dazu empfehlen wir **Cacık** (neutralisiert), **Greek Feta** (Salzbalance) und **Levrek**.")
+    if drink == "Rakı":
+        st.success("Klassisch! Dazu empfehlen wir **Cacık** (neutralisiert), **Greek Feta** (Salzbalance), **Fishball**, **Roasties** und **Levrek**.")
     elif "Weißwein" in drink:
-        st.success("Dazu passt hervorragend etwas aus dem Meer: **Karides** oder **Octopus**.")
+        st.success("Dazu passt hervorragend etwas aus dem Meer: **Fishball**, **Piyaz**, **Tarama**, **Red Kisir**, **Karides** oder **Octopus**.")
     elif "Rotwein" in drink:
-        st.success("Rotwein braucht kräftige Partner: **Çökertme Kebap** oder **Red Kisir**.")
+        st.success("Rotwein braucht kräftige Partner: **Fasoulya**, **Köfte'lein**, **Chicken Sote**, **Çökertme Kebap** oder **Red Kisir**.")
     else:
-        st.success("Zu unseren Cocktails empfehlen wir unsere knusprigen **Börek**.")
+        st.success("Zu unseren Cocktails empfehlen wir unsere knusprigen **Börek**, **Greek Feta**, **Linsa**, **Mücver** und **Icli**.")
 
 with tab3:
     st.header("Deine Auswahl")
@@ -171,7 +171,7 @@ with tab3:
         st.subheader(f"Gesamt: {total:.2f} €")
         if st.button("Küche benachrichtigen"):
             st.balloons()
-            st.success("Sipariş alındı! (Bestellung empfangen)")
+            st.success("BESTELLUNG DEM KELLNER ZEIGEN")
             st.session_state.cart = []
     else:
         st.write("Noch nichts ausgewählt.")
