@@ -54,7 +54,7 @@ st.markdown("""
 # --- ECHTE DATEN (Aus deinem PDF extrahiert) ---
 menu_data = {
     "Kalte Meze (je 7,50 €)": [
-        {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "neva-menu/images/cacik.jpeg"},
+        {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "neva-menu/cacik.jpeg"},
         {"name": "RED KISIR", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "neva-menu/images/redkisir.jpeg"},
         {"name": "HUMUS", "desc": "Kichererbsen, Tahin, Knoblauch", "price": 7.50, "tags": ["G", "VE"], "img": "neva-menu/images/humus.jpeg"},
         {"name": "PIYAZ", "desc": "Bohnen, Zwiebeln, Tomaten", "price": 7.50, "tags": ["G", "VE"], "img": "neva-menu/images/piyaz.jpeg"},
