@@ -9,11 +9,11 @@ st.set_page_config(page_title="Neva Digital Menu", page_icon="🧿", layout="cen
 st.markdown("""
     <style>
     .stApp {
-        background-color: #0B1E3B; /* Neva Tiefblau */
+        background-color: #174d80; /* Neva Tiefblau */
         color: #FFFFFF;
     }
     h1, h2, h3 {
-        color: #D4AF37 !important; /* Gold */
+        color: #a6773b !important; /* Gold */
         font-family: 'Helvetica', sans-serif;
         font-weight: 300;
     }
@@ -26,15 +26,15 @@ st.markdown("""
         width: 100%;
     }
     .card {
-        background-color: #162B4D;
+        background-color: #174d80;
         padding: 15px;
         border-radius: 10px;
         margin-bottom: 15px;
-        border: 1px solid #D4AF37;
+        border: 1px solid #a6773b;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
     .price {
-        color: #E87E54; /* Terrakotta Akzent */
+        color: #a6773b; /* Terrakotta Akzent */
         font-weight: bold;
         float: right;
         font-size: 1.1em;
@@ -42,7 +42,7 @@ st.markdown("""
     .tag {
         background-color: #0B1E3B;
         border: 1px solid #E87E54;
-        color: #E87E54;
+        color: #a6773b;
         padding: 2px 8px;
         border-radius: 10px;
         font-size: 0.7em;
@@ -53,7 +53,7 @@ st.markdown("""
 
 # --- ECHTE DATEN (Aus deinem PDF extrahiert) ---
 menu_data = {
-    "Kalte Meze (je 7,50 €)": [
+    "Kalte Meze": [
         {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/cacik.jpeg"},
         {"name": "RED KISIR", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/redkisir.jpeg"},
         {"name": "HUMUS", "desc": "Kichererbsen, Tahin, Knoblauch", "price": 7.50, "tags": ["G", "VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/humus.jpeg"},
@@ -64,7 +64,7 @@ menu_data = {
         {"name": "LEVREK", "desc": "Wolfsbarsch, Sellerie, Orangen, Zwiebeln", "price": 7.50, "tags": ["G"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/levrek.jpeg"},
         {"name": "GREEK FETA", "desc": "Schafskäse, Honigmelone", "price": 7.50, "tags": ["G", "V"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/greekfeta.jpeg"},
     ],
-    "Warme Meze (12,50 € - 18,00 €)": [
+    "Warme Meze": [
         {"name": "Börek", "desc": "Teigröllchen mit Sauerkraut-Chili-Füllung", "price": 12.50, "tags": ["VE"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/kadinbudu.jpeg"},
         {"name": "Manti", "desc": "Mit Käsefüllung, Joghurt, Chiliöl, Knoblauch", "price": 12.50, "tags": ["V"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/manti.jpeg"},
         {"name": "Karides", "desc": "Garnelen, getr. Tomaten, Butter, Chili, Knoblauch", "price": 18.00, "tags": ["G", "Top-Seller"], "img": "https://github.com/buriber/neva-menu/blob/2f2235289b57c493903f5f82b58bd7218c1ceb04/images/karides.jpeg"},
