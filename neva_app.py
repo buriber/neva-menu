@@ -53,22 +53,22 @@ st.markdown("""
 # --- ECHTE DATEN (Aus deinem PDF extrahiert) ---
 menu_data = {
     "Kalte Meze (je 7,50 €)": [
-        {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "tzatziki"},
-        {"name": "RED KISIR", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "bulgur salad"},
-        {"name": "HUMUS", "desc": "Kichererbsen, Tahin, Knoblauch", "price": 7.50, "tags": ["G", "VE"], "img": "hummus"},
-        {"name": "PIYAZ", "desc": "Bohnen, Zwiebeln, Tomaten", "price": 7.50, "tags": ["G", "VE"], "img": "bean salad"},
+        {"name": "CACIK", "desc": "Joghurt, Gurken, Minze, Knoblauch", "price": 7.50, "tags": ["G", "V"], "img": "cacik"},
+        {"name": "RED KISIR", "desc": "Bulgur, Paprika, Rote Bete, Petersilie", "price": 7.50, "tags": ["VE"], "img": "redkisir"},
+        {"name": "HUMUS", "desc": "Kichererbsen, Tahin, Knoblauch", "price": 7.50, "tags": ["G", "VE"], "img": "humus"},
+        {"name": "PIYAZ", "desc": "Bohnen, Zwiebeln, Tomaten", "price": 7.50, "tags": ["G", "VE"], "img": "piyaz"},
            {"name": "LINSA", "desc": "Linsen, Bulgur, Zwiebeln", "price": 12.50, "tags": ["VE"], "img": "linsa"},
            {"name": "TARAMA", "desc": "Fischrogen, Zwiebeln, Eier, Dill", "price": 12.50, "tags": ["G"], "img": "tarama"},
            {"name": "ROASTIES", "desc": "Geröstete Auberginen, Paprika, Tomaten", "price": 12.50, "tags": ["G", "VE"], "img": "roasties"},
-        {"name": "LEVREK", "desc": "Wolfsbarsch, Sellerie, Orangen, Zwiebeln", "price": 7.50, "tags": ["G"], "img": "seabass ceviche"},
-        {"name": "GREEK FETA", "desc": "Schafskäse, Honigmelone", "price": 7.50, "tags": ["G", "V"], "img": "feta cheese"},
+        {"name": "LEVREK", "desc": "Wolfsbarsch, Sellerie, Orangen, Zwiebeln", "price": 7.50, "tags": ["G"], "img": "levrek"},
+        {"name": "GREEK FETA", "desc": "Schafskäse, Honigmelone", "price": 7.50, "tags": ["G", "V"], "img": "greekfeta"},
     ],
     "Warme Meze (12,50 € - 18,00 €)": [
-        {"name": "Börek", "desc": "Teigröllchen mit Sauerkraut-Chili-Füllung", "price": 12.50, "tags": ["VE"], "img": "spring rolls"},
-        {"name": "Manti", "desc": "Mit Käsefüllung, Joghurt, Chiliöl, Knoblauch", "price": 12.50, "tags": ["V"], "img": "manti dumplings"},
-        {"name": "Karides", "desc": "Garnelen, getr. Tomaten, Butter, Chili, Knoblauch", "price": 18.00, "tags": ["G", "Top-Seller"], "img": "shrimp garlic"},
-        {"name": "Ahtapot (Octopus Pan)", "desc": "Oktopus, Tomaten, Paprika, Perlzwiebeln, Rotwein", "price": 18.00, "tags": ["G", "Premium"], "img": "grilled octopus"},
-        {"name": "Çökertme Kebap", "desc": "Filetstreifen, Pommes Julienne, Knoblauchjoghurt", "price": 18.00, "tags": ["G", "Spezialität"], "img": "kebab yogurt"},
+        {"name": "Börek", "desc": "Teigröllchen mit Sauerkraut-Chili-Füllung", "price": 12.50, "tags": ["VE"], "img": "borek"},
+        {"name": "Manti", "desc": "Mit Käsefüllung, Joghurt, Chiliöl, Knoblauch", "price": 12.50, "tags": ["V"], "img": "manti"},
+        {"name": "Karides", "desc": "Garnelen, getr. Tomaten, Butter, Chili, Knoblauch", "price": 18.00, "tags": ["G", "Top-Seller"], "img": "karides"},
+        {"name": "Ahtapot (Octopus Pan)", "desc": "Oktopus, Tomaten, Paprika, Perlzwiebeln, Rotwein", "price": 18.00, "tags": ["G", "Premium"], "img": "octopuspan"},
+        {"name": "Çökertme Kebap", "desc": "Filetstreifen, Pommes Julienne, Knoblauchjoghurt", "price": 18.00, "tags": ["G", "Spezialität"], "img": "cökertme"},
     ],
     "Neva Menüs (Sets)": [
         {"name": "Merhaba Menü", "desc": "Für 2 Gäste: 3 Kalte, 2 Warme, 1 Salat, 2 Desserts, 2 Mokka + Wasser-Flat", "price": 48.00, "tags": ["Best Value"], "img": "feast table"},
