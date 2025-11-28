@@ -115,7 +115,7 @@ with tab1:
                 c1, c2 = st.columns([3, 1])
                 with c1:
                     # In Produktion hier echte Fotos verwenden!
-                    st.image(img_url, use_container_width=True) 
+                  
                 with c2:
                     st.write("") 
                     st.write("")
